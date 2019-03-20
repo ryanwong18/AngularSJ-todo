@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="item in itemInfo">
+        <span ng-click="move(item, 'up')">&#8593;</span>
+        <span>{{item}}</span>
+        <a href="" ng-click="remove(item)"><span>[x]</span></a>
+        <span ng-click="move(item, 'down')">&#8595;</span>
+    </li>
+</ul>

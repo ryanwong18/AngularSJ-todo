@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS Todo App</title>
+</head>
+<body ng-controller="appControl">
+    <h1>Todo App</h1>
+
+    <form>
+        <input type="text" ng-model="listItem">
+        <input type="submit" value="submit" ng-click="submitForm()">
+        <input type="submit" value="clear" ng-click="clearForm()">
+    </form>
+
+    <h2>Items in List</h2>
+
+    <display-items info="listArray"></display-items>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="directive.js"></script>
+    <script src="service.js"></script>
+    <script src="utility.js"></script>
+</body>
+</html>
