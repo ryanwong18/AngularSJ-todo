@@ -1,5 +1,5 @@
 <ul>
-    <li ng-repeat="item in itemInfo">
+    <li ng-repeat="item in itemInfo track by $index">
         <span ng-click="move(item, 'up')">&#8593;</span>
         <span>{{item}}</span>
         <a href="" ng-click="remove(item)"><span>[x]</span></a>

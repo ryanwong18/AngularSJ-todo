@@ -1,7 +1,7 @@
 angular.module('todoApp')
     .directive('displayItems', [function() {
         return {
-            templateUrl: 'display.html',
+            templateUrl: 'directive-view/display.html',
             restrict: 'E',
             scope : {
                 itemInfo: '=info'
