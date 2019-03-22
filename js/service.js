@@ -1,4 +1,4 @@
-angular.module('todoApp')
+angular.module('serviceModule', [])
     .service('appService', [function() {
         var listArray = [];
 
